@@ -3,10 +3,12 @@ api_version: 1
 threadsafe: true
 
 handlers:
--url: /
-static_files:Capsure/Capsure.html
-upload:Capsure/Capsure.html
+-url: /style
+static_dir: style
 
--url: /(.*)
-static_files:Capsure/\1
+-url: /style
+static_dir: style
+
+-url: /.*
+static_dir:Capsure/style
 upload: Capsure/(.*)
