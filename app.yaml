@@ -6,9 +6,9 @@ handlers:
 -url: /style
 static_dir: style
 
--url: /style
-static_dir: style
+-url: /images
+static_dir: images
 
 -url: /.*
-static_dir:Capsure/style
-upload: Capsure/(.*)
+static_files: /.*
+upload: /.*
