@@ -1,0 +1,12 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+-url: /
+static_files:Capsure/Capsure.html
+upload:Capsure/Capsure.html
+
+-url: /(.*)
+static_files:Capsure/\1
+upload: Capsure/(.*)
